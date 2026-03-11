@@ -6,10 +6,6 @@ on: [push]
 permissions:
   contents: read
 
-concurrency:
-  group: node-ci-${{ github.ref }}
-  cancel-in-progress: true
-
 defaults:
   run:
     working-directory: framework
