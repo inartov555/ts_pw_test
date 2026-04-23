@@ -5,7 +5,7 @@
 ## Playwright E2E Tests
 
 End-to-end (E2E) automated tests written in TypeScript using Playwright.  
-The actual Playwright project (config, tests, Dockerfile, etc.) is fully contained in the `framework/` directory.
+The actual Playwright project (config, tests, Dockerfile, etc.) is in the `framework/` directory.
 
 > Default URL:  
 > [https://book.distribusion.com/?retailerPartnerNumber=807197](https://book.distribusion.com/?retailerPartnerNumber=807197)
@@ -33,7 +33,7 @@ cd framework
 
 # Input parameters:
 #
-#     Use docker (is_isolated)
+#     Use Docker (is_isolated)
 #   - $1 - true - Docker launches tests with NPM, isolated environment;
 #          false - NPM starts tests, NO isolated environment;
 #          default = false;
@@ -66,7 +66,6 @@ cd framework
 ./run_tests.sh true true
 ```
 
-Copied project folder, run results like logs, etc., are located in: `/home/$user_name/TEST1/workspace`. 
 Artifacts (run results, logs, etc.) are located in: `/home/$user_name/TEST1/workspace/artifacts`.
 
 ---
@@ -84,7 +83,7 @@ Artifacts (run results, logs, etc.) are located in: `/home/$user_name/TEST1/work
 
 At a high level:
 
-```text
+```
 js_pw_test/
 ├─ framework/
 │  ├─ Dockerfile
